@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('https://pimi.icar.gov.in/Images/under_%20development.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.89); 
+    z-index: 1;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6, button{
+      font-family: "Montserrat", sans-serif;
+  }
+  h1{
+      font-weight: 500;
+  }
+  button{
+      font-weight: 500;
+  }
+  .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+  }
+  h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+  .countdown-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .countdown {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .label {
+    font-size: 0.8rem;
+    color: #3c8cc9;
+    margin-top: 5px;
+  }
+  span{
+      color: #3c8cc9;
+  }
+  .email-container {
+    margin-top: 20px;
+  }
+  .email-input {
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  .subscribe-button {
+    background-color: #3c8cc9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .subscribe-button:hover {
+    background-color: #b08b41;
+  }
+  .logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
