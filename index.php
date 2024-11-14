@@ -1,3 +1,6 @@
+<?php
+  require_once('news-letter.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,9 +47,25 @@
     <p><span>#</span>underconstruction</p>
     <p>Subscribe to the newsletter to stay in the latest news.</p>
     <div class="email-container">
-      <input type="email" class="email-input" placeholder="Your E-mail">
-      <button class="subscribe-button">Subscribe</button>
+        <form action="" method="post">
+          <input type="text" class="email-input" name="mail-newsLetter" placeholder="Your E-mail">
+          <button class="subscribe-button" name="send-NewsLetter">Subscribe</button>
+        </form>
+    
     </div>
+    <?php if (!empty($error)): ?>
+            <div class="alert alert-error" id="alertMessage">
+                <?= $error; ?>
+                <span class="close-btn" onclick="closeAlert()">&times;</span>
+            </div>
+        <?php endif; ?>
+
+        <?php if (!empty($success)): ?>
+            <div class="alert alert-success" id="alertMessage">
+                <?= $success; ?>
+                <span class="close-btn" onclick="closeAlert()">&times;</span>
+            </div>
+        <?php endif; ?>
   </section>
 
   <script src="script.js"></script>

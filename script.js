@@ -29,3 +29,20 @@
         localStorage.removeItem("countDownDate");
       }
     }, 1000);
+
+
+    // Function to automatically close the alert after 10 seconds
+    setTimeout(() => {
+      const alertMessage = document.getElementById('alertMessage');
+      if (alertMessage) {
+          alertMessage.style.opacity = '0';
+          setTimeout(() => alertMessage.style.display = 'none', 500); // Transition effect
+      }
+  }, 10000);
+
+  // Function to close the alert immediately when close button is clicked
+  function closeAlert() {
+      const alertMessage = document.getElementById('alertMessage');
+      alertMessage.style.opacity = '0';
+      setTimeout(() => alertMessage.style.display = 'none', 500); // Transition effect
+  }

@@ -37,7 +37,8 @@
       font-family: "Montserrat", sans-serif;
   }
   h1{
-      font-weight: 500;
+      font-weight: 600;
+      letter-spacing: 5px;
   }
   button{
       font-weight: 500;
@@ -77,11 +78,12 @@
     padding: 7px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    width: 200px;
+    width: 220px;
     outline: none;
     font-family: "Poppins", sans-serif;
   }
   .subscribe-button {
+    width: 120px;
     background-color: #3c8cc9;
     color: #fff;
     padding: 10px 20px;
@@ -91,10 +93,85 @@
     cursor: pointer;
   }
   .subscribe-button:hover {
-    background-color: #b08b41;
+    background-color: #267ec2;
   }
   .logo {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 30px;
   }
+
+  /*POPUP CODES*/
+
+  .form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input[type="email"], button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Alert styles */
+.alert {
+    position: relative;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: white;
+    opacity: 1;
+    animation: fadeInSlide 0.8s forwards;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.alert-success {
+    background-color: #4CAF50;
+}
+
+.alert-error {
+    background-color: #f44336;
+}
+
+/* Close button styling */
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+/* Animation for alerts */
+@keyframes fadeInSlide {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
